@@ -1,0 +1,140 @@
+/* * {
+	box-shadow: inset 0 0 0 1px rgba(0, 255, 0, 0.3);
+} */
+
+* {
+	background-color: orange;
+}
+
+body {
+	height: 100vh;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-pack: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	/*typography*/
+	line-height: 1.4 !important;
+	/* font-size: 1.7vh !important; */
+}
+
+#logo {
+	width: 250px;
+}
+
+/*Tipografia responsiva*/
+
+@media (max-width: 767.98px) {
+	body {
+	font-size: 1.2rem !important;
+	}
+	.ser-fas.fas {
+	font-size: 3rem !important;
+	}
+	.contato-P {
+	font-size: 1.3 !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	body {
+	font-size: 1.2rem !important;
+	}
+	.ser-fas.fas {
+	font-size: 3rem !important;
+	}
+	.contato-P {
+	font-size: 1.2rem !important;
+	}
+}
+
+@media (min-width: 992px) {
+	body {
+	font-size: 1.2rem !important;
+	}
+	.ser-fas.fas {
+	font-size: 2rem !important;
+	}
+	.contato-P {
+	font-size: 1.5rem !important;
+	}
+}
+
+/*Estilo dos ícones Font Awesome*/
+
+.fab, .fa {
+	color: #000 !important;
+	font-size: 2.5rem;
+}
+
+.fab:hover, .fa:hover {
+	color: white !important;
+}
+
+.table th.data {
+	padding-left: 0px;
+}
+
+.table {
+	margin-top: 1rem;
+	width: auto !important;
+}
+
+.ano {
+	color: white;
+}
+
+/*Estilo dos títulos*/
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-weight: 900 !important;
+	letter-spacing: 0.08rem !important;
+}
+
+/*Animação fade*/
+
+/*
+ * animate.css -http://daneden.me/animate
+ * Version - 3.6.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+  }
+  
+  .animated.infinite {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+  }
+
+@-webkit-keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  .fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+  }
